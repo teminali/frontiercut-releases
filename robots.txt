@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teminali.github.io/frontiercut-releases/sitemap.xml

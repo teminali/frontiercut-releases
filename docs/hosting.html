@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release Hosting & Distribution Documentation — FrontierCut</title>
+  <meta name="description" content="Technical documentation on how FrontierCut desktop video editor releases are hosted, automated via GitHub Actions, and distributed across macOS, Windows, and Linux.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://teminali.github.io/frontiercut-releases/docs/hosting.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/icon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-base: #07080c;
+      --bg-surface: #0d0f17;
+      --bg-card: rgba(20, 23, 36, 0.75);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --accent: #4a90ff;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-faint: #6b7280;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+    h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; color: #fff; margin-top: 2rem; margin-bottom: 1rem; }
+    p, li { color: var(--text-muted); font-size: 1rem; margin-bottom: 1rem; }
+    pre, code { font-family: 'JetBrains Mono', monospace; }
+    pre {
+      background: #0d1117;
+      padding: 16px 20px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+      color: #93c5fd;
+      font-size: 0.88rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 24px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+    th, td { padding: 12px 16px; border: 1px solid var(--border-subtle); text-align: left; }
+    th { background: rgba(255,255,255,0.04); color: #fff; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../" style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 32px; font-size: 0.9rem;">
+      ← Back to Download Portal
+    </a>
+
+    <h1 style="font-size: 2.4rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 16px;">
+      FrontierCut Release Hosting & Distribution
+    </h1>
+
+    <p>
+      FrontierCut uses a decoupled, two-tier architecture to deliver instant, secure, and authenticated desktop releases while keeping proprietary core engine source private.
+    </p>
+
+    <h2>1. Architecture Diagram</h2>
+    <pre>
+┌───────────────────────────────┐
+│ Private Core Repository       │  (Full engine source code)
+│ (teminali/frontierCut)        │
+└───────────────┬───────────────┘
+                │ git push tag vX.Y.Z
+                ▼
+┌───────────────────────────────┐
+│ GitHub Actions Release Matrix │  (macOS ARM64/x64, Windows x64, Linux)
+└───────────────┬───────────────┘
+                │ Build, Package, Checksum
+                ▼
+┌───────────────────────────────┐
+│ Public Releases Hub           │  (Installer Binaries & Updates)
+│ (teminali/frontiercut-releases│
+└───────┬───────────────┬───────┘
+        │               │
+        ▼               ▼
+┌───────────────┐ ┌───────────────┐
+│ Web Portal    │ │ In-App Auto-  │
+│ (GitHub Pages)│ │ Updater       │
+└───────────────┘ └───────────────┘</pre>
+
+    <h2>2. Supported Target Platforms</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Architecture</th>
+          <th>Package</th>
+          <th>Installer Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>macOS</strong></td>
+          <td>Apple Silicon (ARM64)</td>
+          <td>DMG / ZIP</td>
+          <td>M1, M2, M3, M4 Macs</td>
+        </tr>
+        <tr>
+          <td><strong>macOS</strong></td>
+          <td>Intel (x64)</td>
+          <td>DMG / ZIP</td>
+          <td>Intel-based Macs</td>
+        </tr>
+        <tr>
+          <td><strong>Windows</strong></td>
+          <td>x64 (64-bit)</td>
+          <td>NSIS Setup (.exe)</td>
+          <td>Windows 10 / 11</td>
+        </tr>
+        <tr>
+          <td><strong>Linux</strong></td>
+          <td>x86_64</td>
+          <td>AppImage</td>
+          <td>Ubuntu, Debian, Fedora, Arch</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Auto-Updater Feeds & Cryptographic Checksums</h2>
+    <p>
+      Each release publishes metadata manifests containing SHA-512 cryptographic hashes alongside the application binaries:
+    </p>
+    <ul>
+      <li><code>latest-mac.yml</code>: macOS feed containing ARM64 and x64 DMG and ZIP package hashes.</li>
+      <li><code>latest.yml</code>: Windows feed containing NSIS installer hashes.</li>
+      <li><code>latest-linux.yml</code>: Linux AppImage manifest.</li>
+    </ul>
+
+    <h2>4. Verifying Download Integrity</h2>
+    <p>To verify the SHA-512 checksum of any downloaded file in the terminal:</p>
+    <pre>
+# macOS / Linux
+shasum -a 512 &lt;downloaded-file&gt;
+
+# Windows PowerShell
+Get-FileHash -Algorithm SHA512 .\&lt;downloaded-file&gt;</pre>
+  </div>
+</body>
+</html>
