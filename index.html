@@ -337,11 +337,11 @@
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 10px;">
-            <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-macOS-arm64.dmg" class="btn-primary" style="padding: 12px 20px; font-size: 0.95rem;">
+            <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-macOS-arm64.dmg" class="btn-primary" style="padding: 12px 20px; font-size: 0.95rem;">
               <span>Apple Silicon (.dmg)</span>
               <span style="font-size: 0.75rem; opacity: 0.75; font-family: monospace;">ARM64 · M1/M2/M3/M4</span>
             </a>
-            <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-macOS-x64.dmg" class="btn-secondary" style="padding: 10px 18px; font-size: 0.9rem; justify-content: space-between;">
+            <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-macOS-x64.dmg" class="btn-secondary" style="padding: 10px 18px; font-size: 0.9rem; justify-content: space-between;">
               <span>Intel Mac (.dmg)</span>
               <span style="font-size: 0.75rem; opacity: 0.75; font-family: monospace;">x64</span>
             </a>
@@ -370,7 +370,7 @@
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 10px;">
-            <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-Setup-1.12.6-Windows-x64.exe" class="btn-primary" style="padding: 12px 20px; font-size: 0.95rem; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+            <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-Setup-1.12.6-Windows-x64.exe" class="btn-primary" style="padding: 12px 20px; font-size: 0.95rem; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
               <span>Windows Installer (.exe)</span>
               <span style="font-size: 0.75rem; opacity: 0.75; font-family: monospace;">64-bit Setup</span>
             </a>
@@ -393,7 +393,7 @@
             <p style="font-size: 0.85rem; color: var(--text-muted);">Ubuntu, Debian, Fedora, Arch & openSUSE (x86_64)</p>
           </div>
         </div>
-        <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-Linux-x86_64.AppImage" class="btn-secondary" style="padding: 12px 24px; font-size: 0.95rem;">
+        <a href="https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-Linux-x86_64.AppImage" class="btn-secondary" style="padding: 12px 24px; font-size: 0.95rem;">
           <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
           Download .AppImage
         </a>
@@ -556,17 +556,17 @@
 
       if (/Mac/i.test(platform) || /Macintosh/i.test(ua)) {
         // macOS detection (default to ARM64 for modern macs)
-        heroBtn.href = "https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-macOS-arm64.dmg";
+        heroBtn.href = "https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-macOS-arm64.dmg";
         heroText.textContent = "Download for macOS (Apple Silicon)";
         detectedLabel.textContent = "Detected: macOS (Apple Silicon M1/M2/M3/M4) · DMG Installer";
       } else if (/Win/i.test(platform) || /Windows/i.test(ua)) {
         // Windows detection
-        heroBtn.href = "https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-Setup-1.12.6-Windows-x64.exe";
+        heroBtn.href = "https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-Setup-1.12.6-Windows-x64.exe";
         heroText.textContent = "Download for Windows (64-bit)";
         detectedLabel.textContent = "Detected: Windows 10 / 11 64-bit · Setup EXE";
       } else if (/Linux/i.test(platform) || /Linux/i.test(ua)) {
         // Linux detection
-        heroBtn.href = "https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-Linux-x86_64.AppImage";
+        heroBtn.href = "https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-Linux-x86_64.AppImage";
         heroText.textContent = "Download for Linux (AppImage)";
         detectedLabel.textContent = "Detected: Linux x86_64 · Portable AppImage";
       } else {

@@ -22,10 +22,10 @@
 
 | Operating System | Architecture | Package Format | Direct Download |
 | :--- | :--- | :--- | :--- |
-| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-macOS-arm64.dmg) |
-| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-macOS-x64.dmg) |
-| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-Setup-1.12.6-Windows-x64.exe) |
-| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/Kerf-1.12.6-Linux-x86_64.AppImage) |
+| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-macOS-arm64.dmg) |
+| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-macOS-x64.dmg) |
+| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-Setup-1.12.6-Windows-x64.exe) |
+| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-Linux-x86_64.AppImage) |
 
 ---
 
