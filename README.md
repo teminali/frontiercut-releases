@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Open-Source Desktop AI Video Editor with Model Context Protocol (MCP) Integration</strong>
+  <strong>The Professional Desktop AI Video Editor with Model Context Protocol (MCP) Integration</strong>
   <br />
   Available for macOS (Apple Silicon & Intel), Windows 10/11 (64-bit), and Linux.
 </p>
@@ -18,14 +18,14 @@
 
 ---
 
-## 🚀 Quick Download Links (v1.12.6)
+## 🚀 Quick Download Links (v1.12.9)
 
 | Operating System | Architecture | Package Format | Direct Download |
 | :--- | :--- | :--- | :--- |
-| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-macOS-arm64.dmg) |
-| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-macOS-x64.dmg) |
-| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-Setup-1.12.6-Windows-x64.exe) |
-| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.6/FrontierCut-1.12.6-Linux-x86_64.AppImage) |
+| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.9/FrontierCut-1.12.9-macOS-arm64.dmg) |
+| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.9/FrontierCut-1.12.9-macOS-x64.dmg) |
+| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.9/FrontierCut-Setup-1.12.9-Windows-x64.exe) |
+| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.9/FrontierCut-1.12.9-Linux-x86_64.AppImage) |
 
 ---
 
