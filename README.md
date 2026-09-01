@@ -18,14 +18,14 @@
 
 ---
 
-## 🚀 Quick Download Links (v1.13.0)
+## 🚀 Quick Download Links (v1.13.1)
 
 | Platform | Architecture | Format | Download Link |
 |---|---|---|---|
-| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-1.13.0-macOS-arm64.dmg) |
-| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-1.13.0-macOS-x64.dmg) |
-| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-Setup-1.13.0-Windows-x64.exe) |
-| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-1.13.0-Linux-x86_64.AppImage) |
+| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.1/FrontierCut-1.13.1-macOS-arm64.dmg) |
+| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.1/FrontierCut-1.13.1-macOS-x64.dmg) |
+| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.1/FrontierCut-Setup-1.13.0-Windows-x64.exe) |
+| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.1/FrontierCut-1.13.0-Linux-x86_64.AppImage) |
 
 ---
 
