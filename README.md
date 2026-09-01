@@ -18,22 +18,22 @@
 
 ---
 
-## 🚀 Quick Download Links (v1.12.11)
+## 🚀 Quick Download Links (v1.13.0)
 
 | Platform | Architecture | Format | Download Link |
 |---|---|---|---|
-| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.11/FrontierCut-1.12.11-macOS-arm64.dmg) |
-| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.11/FrontierCut-1.12.11-macOS-x64.dmg) |
-| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.11/FrontierCut-Setup-1.12.11-Windows-x64.exe) |
-| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.12.11/FrontierCut-1.12.11-Linux-x86_64.AppImage) |
+| **macOS** | Apple Silicon (M1/M2/M3/M4) | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-1.13.0-macOS-arm64.dmg) |
+| **macOS** | Intel x86_64 | DMG Installer | [Download DMG](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-1.13.0-macOS-x64.dmg) |
+| **Windows** | Windows 10/11 64-bit | Setup EXE (NSIS) | [Download Setup.exe](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-Setup-1.13.0-Windows-x64.exe) |
+| **Linux** | x86_64 | Portable AppImage | [Download AppImage](https://github.com/teminali/frontiercut-releases/releases/download/v1.13.0/FrontierCut-1.13.0-Linux-x86_64.AppImage) |
 
 ---
 
 ## ✦ Key Features
 
+- **Microsoft VibeVoice Unified Speech AI**: Multi-speaker conversational dialogue synthesis, single-pass diarized ASR, and real-time live streaming captions with speaker badges.
 - **Model Context Protocol (MCP) Live Agent**: Pair Claude Code, Antigravity, or Gemini CLI to edit the live timeline autonomously.
 - **Hardware-Accelerated WebCodecs**: 4K 60fps canvas compositing with zero-copy decoding.
-- **Offline Whisper Subtitles**: Word-accurate transcriptions and kinetic captions with zero API token costs.
 - **Audio Beat Detection**: Automatically detects BPM and onsets to snap cuts to the musical rhythm.
 - **Bézier Keyframes & Spatial Motion**: Fluid transform controls, easing curves, and color grading.
 
